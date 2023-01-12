@@ -219,9 +219,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[feature-1]**
-- [ ] **[feature-2]**
-- [ ] **[feature-3]**
+- [ ] **[Header / Toolbar is designed with HTML & CSS]**
+- [ ] **[Headline section is designed with HTML & CSS]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
