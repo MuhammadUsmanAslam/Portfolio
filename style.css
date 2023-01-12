@@ -80,7 +80,8 @@ header {
   list-style: none;
 }
 
-.social-icons > a , i {
+.social-icons > a,
+i {
   text-decoration: none;
   color: #505f79;
 }
