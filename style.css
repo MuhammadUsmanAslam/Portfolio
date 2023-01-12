@@ -11,111 +11,8 @@ html {
 
 body {
   position: relative;
-  padding: 0 7vw;
   background-color: #fff;
 }
-
-/* Top Right Shapes starts */
-.rectangle-top-right {
-  position: absolute;
-  top: 4em;
-  right: 0;
-  z-index: -999;
-}
-
-.circle-top-right {
-  position: absolute;
-  top: calc(4em + 33.5px);
-  right: 0;
-  z-index: -999;
-}
-
-/* Top Right Shapes Ends */
-
-/* Top Left Shapes Starts */
-.rectangle-top-left {
-  position: absolute;
-  top: 3.25em;
-  left: 0;
-  z-index: -999;
-}
-
-.circle-top-left {
-  position: absolute;
-  top: calc(3.25em + 22px);
-  left: 0;
-  z-index: -999;
-}
-
-/* Top Left Shapes Ends */
-
-/* Top Middle Shapes Starts Here */
-.circle-top-most-middle {
-  position: absolute;
-  top: 4em;
-  left: 55%;
-  z-index: -999;
-}
-
-.rectangle-top-middle {
-  position: absolute;
-  top: 6.5em;
-  left: 35%;
-  z-index: -998;
-}
-
-.circle-top-middle {
-  position: absolute;
-  top: 7.05em;
-  left: 35%;
-  z-index: -999;
-}
-
-/* Top Middle Shapes Ends Here */
-
-/* Bottom Left Shapes Starts Here */
-.bottom-left-circle {
-  position: absolute;
-  top: 37em;
-  left: 15%;
-  z-index: -999;
-}
-
-/* Bottom Left Shapes Ends Here */
-
-/* Bottom Middle Shapes Starts Here */
-.bottom-middle-rectangle {
-  position: absolute;
-  top: 37em;
-  left: 35%;
-  z-index: -999;
-}
-
-.bottom-middle-circle {
-  position: absolute;
-  top: 37em;
-  left: 47.5%;
-  z-index: -999;
-}
-
-/* Bottom Middle Shapes Ends Here */
-
-/* Bottom Right Shapes Starts Here */
-.bottom-right-above-circle {
-  position: absolute;
-  top: 32em;
-  right: 7%;
-  z-index: -999;
-}
-
-.bottom-right-below-circle {
-  position: absolute;
-  top: 32.75em;
-  right: 7%;
-  z-index: -999;
-}
-
-/* Bottom Right Shapes Ends Here */
 
 header {
   color: #6070ff;
@@ -125,6 +22,11 @@ header {
   padding: 16px 0;
 }
 
+.logo > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .headline-main {
   max-height: 800px;
   min-height: 550px;
@@ -132,6 +34,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 7%;
+  background-image: url(./assets/headline-background-mobile.jpg);
 }
 
 .headline {
@@ -172,4 +76,5 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #505f79;
 }
