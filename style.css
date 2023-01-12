@@ -22,12 +22,14 @@ body {
   right: 0;
   z-index: -999;
 }
-.circle-top-right{
+
+.circle-top-right {
   position: absolute;
   top: calc(6em + 33.5px);
   right: 0;
   z-index: -999;
 }
+
 /* Top Right Shapes Ends */
 
 /* Top Left Shapes Starts */
@@ -44,6 +46,7 @@ body {
   left: 0;
   z-index: -999;
 }
+
 /* Top Left Shapes Ends */
 
 /* Top Middle Shapes Starts Here */
@@ -53,18 +56,21 @@ body {
   left: 55%;
   z-index: -999;
 }
+
 .rectangle-top-middle {
   position: absolute;
   top: 8.5em;
   left: 35%;
   z-index: -998;
 }
+
 .circle-top-middle {
   position: absolute;
   top: 9.05em;
   left: 35%;
   z-index: -999;
 }
+
 /* Top Middle Shapes Ends Here */
 
 /* Bottom Left Shapes Starts Here */
@@ -74,6 +80,7 @@ body {
   left: 15%;
   z-index: -999;
 }
+
 /* Bottom Left Shapes Ends Here */
 
 /* Bottom Middle Shapes Starts Here */
@@ -83,12 +90,14 @@ body {
   left: 35%;
   z-index: -999;
 }
+
 .bottom-middle-circle {
   position: absolute;
   top: 42em;
   left: 47.5%;
   z-index: -999;
 }
+
 /* Bottom Middle Shapes Ends Here */
 
 /* Bottom Right Shapes Starts Here */
@@ -105,11 +114,11 @@ body {
   right: 7%;
   z-index: -999;
 }
+
 /* Bottom Right Shapes Ends Here */
 
-
 header {
-  color: #6070FF;
+  color: #6070ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,7 +154,7 @@ header {
 .headline-paragraph {
   margin: 10px 0;
   color: #172b4d;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -154,7 +163,7 @@ header {
 
 .headline-sm-suport {
   margin: 10px 0;
-  color: #7F8CFF;
+  color: #7f8cff;
   font-weight: 500;
 }
 
