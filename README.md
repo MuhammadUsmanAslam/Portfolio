@@ -189,14 +189,6 @@ Example command:
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -219,8 +211,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Header / Toolbar is designed with HTML & CSS]**
-- [ ] **[Headline section is designed with HTML & CSS]**
+- [ ] **[Works section is designed with HTML & CSS for mobile version]**
+- [ ] **[About myself section is designed with HTML & CSS for mobile version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -238,8 +230,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -247,8 +237,6 @@ If you like this project...
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank...
 
@@ -275,7 +263,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
