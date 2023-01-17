@@ -203,16 +203,18 @@ You can deploy this project using:
 - Twitter: [@twitterhandle](https://twitter.com/M_Usman_Aslam)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-usman-aslam)
 
+
+👤 **Shu Nfortayong Richmond**
+
+- GitHub: [@githubhandle](https://github.com/shurichmond)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[Works section is designed with HTML & CSS for mobile version]**
-- [ ] **[About myself section is designed with HTML & CSS for mobile version]**
+- [ ] **[Contact form validation and design improvements]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
