@@ -168,7 +168,7 @@ button {
   font-family: inherit;
   background: #fff;
   color: #396df2;
-  border: 1px solid #396df2;
+  border: 1px solid #fff;
   border-radius: 0.5rem;
   padding: 0.75em;
   font-size: 1.05em;
@@ -176,6 +176,12 @@ button {
   letter-spacing: 0.03em;
   width: auto;
   margin: 1em 0;
+}
+
+button:hover {
+  border: 1px solid #396df2;
+  color: #396df2;
+  font-weight: bold;
 }
 
 /* Works Section Styling Ends Here */
@@ -275,6 +281,13 @@ button {
   display: flex;
   flex-direction: column;
   margin-top: 0.75em;
+}
+
+.contact-me-form > input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #f7f7f9;
+  box-shadow: 0 0 2px #f7f7f9;
 }
 
 .contact-me-form-text-input {
