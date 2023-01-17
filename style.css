@@ -147,12 +147,12 @@ i {
 }
 
 .works-card-tags {
-  display: flex;
   margin: 0.25em 0;
   list-style-type: none;
 }
 
 .works-card-tag {
+  float: left;
   color: #6070ff;
   background-color: #ebebff;
   margin: 0 0.5rem 0 0;
