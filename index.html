@@ -206,13 +206,14 @@
             feature that you need built
             or a project that
             needs coding. I'd love to help with it</p>
-        <form action="submit" class="contact-me-form">
-            <input class="contact-me-form-text-input" type="text" value="Usman" placeholder="Your good name">
-            <input class="contact-me-form-text-input" type="email" value="musmanaslam520@gmail.com"
-                placeholder="Your email address">
-            <textarea class="contact-me-form-text-input" name="" id="" cols="30" rows="9"
+        <form action="https://formspree.io/f/mqkoaqjr" method="POST" class="contact-me-form">
+            <input class="contact-me-form-text-input" required maxlength="30" name="name" type="text" value="Usman"
+                placeholder="Your good name">
+            <input class="contact-me-form-text-input" required name="email" type="email"
+                value="musmanaslam520@gmail.com" placeholder="Your email address">
+            <textarea class="contact-me-form-text-input" required maxlength="500" name="message" cols="30" rows="9"
                 placeholder="Write your message here"></textarea>
-            <button class="button">Get In Touch</button>
+            <button class="button" type="submit">Get In Touch</button>
         </form>
     </section>
     <!-- Contact Me Section Starts Here -->
