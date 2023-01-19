@@ -10,6 +10,10 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   position: relative;
   background-color: #f7f7f9;
@@ -44,6 +48,26 @@ header {
   color: inherit;
 }
 
+.nav-menu-button {
+  display: inline;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none;
+  color: #344563;
+  font-weight: 600;
+}
+
+.nav-link {
+  cursor: pointer;
+  padding: 0.625em 0.75em;
+}
+
+.nav-link:nth-child(even) {
+  margin: 0 0.5em;
+}
+
 .headline-main {
   max-height: 800px;
   min-height: 550px;
@@ -52,7 +76,11 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0 7%;
-  background-image: url(./assets/headline-background-mobile.jpg);
+  border-radius: 0 0 0 4em;
+  background-color: #fff;
+  background-image: url(./assets/headline-background-mobile.png);
+  background-size: 100%;
+  background-position-x: center;
   background-repeat: no-repeat;
 }
 
@@ -80,7 +108,6 @@ header {
 }
 
 .social-icons {
-  width: 55%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,9 +120,11 @@ i {
   text-decoration: none;
   color: #505f79;
   font-size: 1.25rem;
+  padding-right: 1em;
 }
 
 /* Works Section Styling Starts Here */
+
 .works-card {
   color: #172b4d;
   background-color: #fff;
@@ -107,6 +136,10 @@ i {
   justify-content: center;
   margin: 8em 7% 0 7%;
   padding: 1em 1em 2em 1em;
+}
+
+.works-card > img {
+  width: 100%;
 }
 
 .works-card-heading-large {
@@ -176,6 +209,7 @@ button {
   letter-spacing: 0.03em;
   width: auto;
   margin: 1em 0;
+  cursor: pointer;
 }
 
 button:hover {
@@ -201,8 +235,11 @@ button[disabled] {
 .about {
   background-color: #fff;
   border-radius: 0 8em 0 0;
-  padding: 5em 7% 0 7%;
   margin: 8em 0 0 0;
+}
+
+.headline-skill-container {
+  padding: 5em 7% 0 7%;
 }
 
 .about-heading-small {
@@ -213,25 +250,26 @@ button[disabled] {
   line-height: 24px;
 }
 
-.about-skills {
+.about-skills-container {
   display: flex;
   flex-direction: column;
   padding: 2em 1em;
+  width: 100%;
 }
 
-.about-skills > hr {
+.about-skills-container > hr {
   height: 2px;
   background: #dfe1e6;
   border: none;
 }
 
-.about-skills-heading {
+.about-skill-heading {
   display: flex;
   justify-content: space-between;
   padding: 2em 1em 2em 0;
 }
 
-.about-skill {
+.about-skill-body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -255,16 +293,15 @@ button[disabled] {
 /* Contact Me starts here */
 .contact-me-form-container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   margin: 6em 0 0 0;
-  padding: 3em 1.5em;
+  padding: 3em;
   border-radius: 5em 0 0 0;
   background-color: #6070ff;
   background-image: url(./assets/contact-form-shapes-mobile.png);
   background-repeat: no-repeat;
   background-position-x: right;
-  z-index: -9;
-  justify-content: center;
 }
 
 .contact-me-form-heading {
@@ -314,8 +351,197 @@ textarea:focus {
   line-height: 20px;
 }
 
-.contact-me-form > .button {
+.contact-me-form-button {
   align-self: flex-start;
 }
 
 /* Contact me ends here */
+
+@media screen and (min-width: 768px) {
+  /* Header Section Styling Starts Here */
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5em;
+    box-shadow: 0 0.25px 10px 0 rgba(0, 0, 255, 0.2);
+  }
+
+  .nav-menu-button {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .headline-main {
+    margin-top: 5em;
+    background-image: url(./assets/headline-background-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  /* Header Section Styling Ends Here */
+
+  /* Works Section Styling Starts Here */
+
+  .works-card > img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .works-card:nth-child(even) > img {
+    order: 2;
+  }
+
+  .works-card:nth-child(even) > .works-card-main {
+    order: 1;
+  }
+
+  .works-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5em;
+    padding: 1em;
+  }
+
+  /* Works Section Styling Starts Here */
+
+  /* About Section Starts Here */
+
+  .headline-skill-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2em;
+  }
+
+  .about-skills-container {
+    padding: 0 1em;
+    margin-bottom: 1em;
+  }
+
+  .about-skill-body-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.75em;
+  }
+
+  .about-skill-body {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .about-skill-body-img {
+    padding: 0;
+  }
+
+  .about-skill-text {
+    padding: 0;
+  }
+
+  .contact-me-form-container {
+    align-content: center;
+    padding: 10% 25%;
+    background-image: url(./assets/contact-form-shapes-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .contact-me-form {
+    align-items: center;
+  }
+
+  .contact-me-form-button {
+    margin: 1em auto;
+  }
+
+  /* About Section Ends Here */
+}
+
+/* Detail Section Starts Here */
+.detail-card {
+  color: #172b4d;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8em 7% 0 7%;
+  padding: 1em 1em 2em 1em;
+}
+
+.detail-card-heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 52px;
+  padding: 0;
+}
+
+.detail-card-cross-icon {
+  padding: 0;
+}
+
+.detail-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-card-display-img-container {
+  width: 100%;
+  height: auto;
+  margin: 2em 0;
+}
+
+.detail-card-display-img-container > img {
+  width: 100%;
+}
+
+.detail-card-body {
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: 2fr 0.95fr;
+  gap: 2em;
+}
+
+.detail-card-body-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.25em 0;
+  list-style-type: none;
+}
+
+.detail-card-body-tag {
+  color: #6070ff;
+  background-color: #ebebff;
+  margin: 0 0.5rem 0.5em 0;
+  padding: 0.25em 0.75em;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.detail-card-body-right-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.detail-card-button {
+  font-size: 15px;
+  padding: 0.5em 0.75em;
+  align-content: center;
+}
+
+.detail-card-button > i {
+  padding: 0;
+  font-size: 0.85em;
+  color: inherit;
+}
+
+/* Detail Section Endss Here */

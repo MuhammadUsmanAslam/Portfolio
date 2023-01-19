@@ -100,8 +100,8 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[HTML Basic Page structure]**
-- **[CSS styling]**
+- **[Personal portfolio built with HTML & CSS]**
+- **[Mobile & desktop versions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,18 +203,13 @@ You can deploy this project using:
 - Twitter: [@twitterhandle](https://twitter.com/M_Usman_Aslam)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-usman-aslam)
 
-
-👤 **Shu Nfortayong Richmond**
-
-- GitHub: [@githubhandle](https://github.com/shurichmond)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Contact form validation and design improvements]**
+- [ ] **[Responsive design for mobile, desktop and other devices]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
