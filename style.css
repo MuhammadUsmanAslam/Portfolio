@@ -43,6 +43,11 @@ header {
   padding: 1em 7%;
 }
 
+.logo {
+  animation-name: logo-animation;
+  animation-duration: 0.5s;
+}
+
 .logo > a {
   text-decoration: none;
   color: inherit;
@@ -315,6 +320,7 @@ button[disabled] {
 }
 
 .contact-me-form-paragraph {
+  cursor: default;
   text-align: center;
   margin-top: 0.75em;
   font-family: 'Poppins', sans-serif;
@@ -545,3 +551,33 @@ textarea:focus {
 }
 
 /* Detail Section Endss Here */
+
+/* Animations and Transitions Start Here */
+@keyframes logo-animation {
+  from {
+    transform: rotate(45deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-me-form-paragraph:hover {
+  transition: transform 2s;
+  transform: translate(20px);
+}
+
+/* Animations and Transitions Ends Here */
