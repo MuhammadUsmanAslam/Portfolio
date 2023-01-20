@@ -197,11 +197,17 @@ You can deploy this project using:
 
 > Mention all of the collaborators of this project.
 
-👤 **Muhammad Usman Aslam**
+👤 **Author 1** Muhammad Usman Aslam**
 
 - GitHub: [@githubhandle](https://github.com/MuhammadUsmanAslam)
 - Twitter: [@twitterhandle](https://twitter.com/M_Usman_Aslam)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-usman-aslam)
+
+👤 **Author 2** Richmond Shu Nfortayong**
+
+- GitHub: [@githubhandle](https://github.com/shurichmond)
+- Twitter: [@twitterhandle](https://twitter.com/shurichmond85)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shu-nfortayong-richmond-10a28620a/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -209,7 +215,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Responsive design for mobile, desktop and other devices]**
+- [ ] **[Animations and transitions are added]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
