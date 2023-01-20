@@ -43,6 +43,11 @@ header {
   padding: 1em 7%;
 }
 
+.logo {
+  animation-name: logo-animation;
+  animation-duration: 0.5s;
+}
+
 .logo > a {
   text-decoration: none;
   color: inherit;
@@ -198,6 +203,7 @@ i {
 }
 
 button {
+  transition: color 1s;
   font-family: inherit;
   background: #fff;
   color: #7f8cff;
@@ -315,6 +321,7 @@ button[disabled] {
 }
 
 .contact-me-form-paragraph {
+  cursor: default;
   text-align: center;
   margin-top: 0.75em;
   font-family: 'Poppins', sans-serif;
@@ -390,6 +397,11 @@ textarea:focus {
   .works-card > img {
     height: 100%;
     width: 100%;
+    transition: transform 1s;
+  }
+
+  .works-card > img:hover {
+    transform: scale(1.1);
   }
 
   .works-card:nth-child(even) > img {
@@ -545,3 +557,33 @@ textarea:focus {
 }
 
 /* Detail Section Endss Here */
+
+/* Animations and Transitions Start Here */
+@keyframes logo-animation {
+  from {
+    transform: rotate(45deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-me-form-paragraph:hover {
+  transition: transform 2s;
+  transform: translate(20px);
+}
+
+/* Animations and Transitions Ends Here */
