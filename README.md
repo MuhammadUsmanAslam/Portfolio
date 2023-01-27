@@ -24,9 +24,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
-**[Portfolio]** is a simple html and css project that contains a simple HTML page and some CSS for that page
+**Portfolio** is a simple html and css project that contains a simple HTML page and some CSS for that page
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,8 +58,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Personal portfolio built with HTML & CSS]**
-- **[Mobile & desktop versions]**
+- **Personal portfolio built with HTML & CSS**
+- **Mobile & desktop versions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,6 +68,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://muhammadusmanaslam.github.io/Portfolio/)
+- [Video Presentation](https://www.loom.com/share/46bbfd342ee84400b9abc5458da2cf30)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
