@@ -35,6 +35,7 @@ body {
 }
 
 header {
+  position: relative;
   background-color: #fff;
   color: #6070ff;
   display: flex;
@@ -51,6 +52,39 @@ header {
 .logo > a {
   text-decoration: none;
   color: inherit;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.mobile-menu-close-icon {
+  color: #fff;
+}
+
+.mobile-menu--hide {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.mobile-menu--show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1.75em;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: rgba(96, 112, 255, 0.9);
+}
+
+.mobile-menu > li {
+  font-size: larger;
+  font-weight: bold;
+  padding: 0.5em 0;
 }
 
 .nav-menu-button {
