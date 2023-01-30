@@ -158,11 +158,9 @@ You can deploy this project using: Github Pages
 - Twitter: [@twitterhandle](https://twitter.com/M_Usman_Aslam)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-usman-aslam)
 
-👤 **Author 2** Richmond Shu Nfortayong**
+👤 **Author 2** TaiwoEnoch**
 
-- GitHub: [@githubhandle](https://github.com/shurichmond)
-- Twitter: [@twitterhandle](https://twitter.com/shurichmond85)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shu-nfortayong-richmond-10a28620a/)
+- GitHub: [@githubhandle](https://github.com/TaiwoEnoch)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,7 +168,7 @@ You can deploy this project using: Github Pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Animations and transitions are added]**
+- [ ] **Mobile Menu with JavaScript**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
