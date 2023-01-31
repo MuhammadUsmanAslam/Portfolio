@@ -4,17 +4,13 @@ const mobileMenuLinks = document.getElementById('mobile-menu-links');
 const mobileMenu = document.getElementById('mobile-menu');
 
 showNav.addEventListener('click', () => {
-  if (mobileMenu.className === 'mobile-menu--hide') {
-    mobileMenu.className = 'mobile-menu--show';
-  }
+  mobileMenu.classList.toggle('mobile-menu--show');
 });
+
 hideNav.addEventListener('click', () => {
-  if (mobileMenu.className === 'mobile-menu--show') {
-    mobileMenu.className = 'mobile-menu--hide';
-  }
+  mobileMenu.classList.toggle('mobile-menu--show');
 });
+
 mobileMenuLinks.addEventListener('click', () => {
-  if (mobileMenu.className === 'mobile-menu--show') {
-    mobileMenu.className = 'mobile-menu--hide';
-  }
+  mobileMenu.classList.toggle('mobile-menu--show');
 });
