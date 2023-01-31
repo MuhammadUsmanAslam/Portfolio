@@ -118,7 +118,9 @@ Example command:
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following command: 
+- You can click on Go Live button on right bottom corner in VS code.
+- You can also open the index.html file to run this project.
 
 <!--
 Example command:
@@ -158,11 +160,9 @@ You can deploy this project using: Github Pages
 - Twitter: [@twitterhandle](https://twitter.com/M_Usman_Aslam)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-usman-aslam)
 
-👤 **Author 2** Richmond Shu Nfortayong**
+👤 **Author 2** TaiwoEnoch**
 
-- GitHub: [@githubhandle](https://github.com/shurichmond)
-- Twitter: [@twitterhandle](https://twitter.com/shurichmond85)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shu-nfortayong-richmond-10a28620a/)
+- GitHub: [@githubhandle](https://github.com/TaiwoEnoch)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,7 +170,7 @@ You can deploy this project using: Github Pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Animations and transitions are added]**
+- **Mobile Menu with JavaScript**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,7 +188,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project...
+If you like this project you can follow me on <a href="https://github.com/MuhammadUsmanAslam">github</a> for more projects like this.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,21 +196,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+I would like to thank Microverse for giving me the opportunity to work on this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

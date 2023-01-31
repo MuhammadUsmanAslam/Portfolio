@@ -14,6 +14,15 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.d-flex {
+  display: flex;
+}
+
 body {
   position: relative;
   background-color: #f7f7f9;
@@ -53,6 +62,40 @@ header {
   color: inherit;
 }
 
+.mobile-menu-close-icon {
+  color: #fff;
+  align-self: flex-end;
+  padding: 0;
+}
+
+.mobile-menu--hide {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.mobile-menu--show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em 0.75em;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: rgba(96, 112, 255, 0.9);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 44px;
+  backdrop-filter: blur(4px);
+}
+
+.mobile-menu--show > ul > li {
+  padding: 0.5em 0;
+}
+
 .nav-menu-button {
   display: inline;
   cursor: pointer;
@@ -77,7 +120,6 @@ header {
   max-height: 800px;
   min-height: 550px;
   width: auto;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 7%;
@@ -91,7 +133,6 @@ header {
 
 .headline {
   margin: 10px 0;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   height: 100%;
@@ -99,7 +140,6 @@ header {
 
 .headline-heading {
   margin: 10px 0;
-  display: flex;
 }
 
 .headline-paragraph {
@@ -113,7 +153,6 @@ header {
 }
 
 .social-icons {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   color: #505f79;
@@ -135,7 +174,6 @@ i {
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 1em;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -155,7 +193,6 @@ i {
 }
 
 .works-card-client {
-  display: flex;
   align-items: center;
   padding: 0.25em 0;
 }
@@ -185,7 +222,6 @@ i {
 }
 
 .works-card-tags {
-  display: flex;
   margin: 0.25em 0;
   list-style-type: none;
 }
@@ -257,7 +293,6 @@ button[disabled] {
 }
 
 .about-skills-container {
-  display: flex;
   flex-direction: column;
   padding: 2em 1em;
   width: 100%;
@@ -270,13 +305,11 @@ button[disabled] {
 }
 
 .about-skill-heading {
-  display: flex;
   justify-content: space-between;
   padding: 2em 1em 2em 0;
 }
 
 .about-skill-body {
-  display: flex;
   align-items: center;
   justify-content: flex-start;
   background-color: #f7f7f9;
@@ -298,7 +331,6 @@ button[disabled] {
 
 /* Contact Me starts here */
 .contact-me-form-container {
-  display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 6em 0 0 0;
@@ -333,7 +365,6 @@ button[disabled] {
 }
 
 .contact-me-form {
-  display: flex;
   flex-direction: column;
   margin-top: 0.75em;
 }
@@ -375,12 +406,12 @@ textarea:focus {
     box-shadow: 0 0.25px 10px 0 rgba(0, 0, 255, 0.2);
   }
 
-  .nav-menu-button {
-    display: none;
-  }
-
   .nav-links {
     display: flex;
+  }
+
+  .nav-menu-button {
+    display: none;
   }
 
   .headline-main {
@@ -479,7 +510,6 @@ textarea:focus {
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 1em;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 8em 7% 0 7%;
@@ -498,7 +528,6 @@ textarea:focus {
 }
 
 .detail-card-header {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -520,7 +549,6 @@ textarea:focus {
 }
 
 .detail-card-body-tags {
-  display: flex;
   flex-wrap: wrap;
   margin: 0.25em 0;
   list-style-type: none;
