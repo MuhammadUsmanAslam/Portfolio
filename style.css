@@ -24,7 +24,7 @@ a {
 }
 
 body {
-  position: relative;
+  /* position: relative; */
   background-color: #f7f7f9;
 }
 
@@ -44,6 +44,7 @@ body {
 }
 
 header {
+  z-index: 10;
   background-color: #fff;
   color: #6070ff;
   display: flex;
@@ -153,7 +154,6 @@ header {
 }
 
 .social-icons {
-  justify-content: space-between;
   align-items: center;
   color: #505f79;
   list-style: none;
@@ -169,7 +169,12 @@ i {
 
 /* Works Section Styling Starts Here */
 
+.works-cards {
+  /* position: relative; */
+}
+
 .works-card {
+  position: relative;
   color: #172b4d;
   background-color: #fff;
   border: 1px solid #dfe1e6;
@@ -399,6 +404,18 @@ textarea:focus {
 
 .detail-card {
   display: none;
+}
+
+.detail-card--show {
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.detail-card-inner {
   flex-direction: column;
   color: #172b4d;
   background-color: #fff;
@@ -407,14 +424,6 @@ textarea:focus {
   justify-content: center;
   margin: 0.5em 2%;
   padding: 1em;
-}
-
-.detail-card--show {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .detail-card-header {
