@@ -24,7 +24,6 @@ a {
 }
 
 body {
-  /* position: relative; */
   background-color: #f7f7f9;
 }
 
@@ -54,6 +53,8 @@ header {
 }
 
 .logo {
+  font-size: 2rem;
+  font-weight: bold;
   animation-name: logo-animation;
   animation-duration: 0.5s;
 }
