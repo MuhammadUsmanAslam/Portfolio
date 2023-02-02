@@ -24,7 +24,6 @@ a {
 }
 
 body {
-  position: relative;
   background-color: #f7f7f9;
 }
 
@@ -44,6 +43,7 @@ body {
 }
 
 header {
+  z-index: 10;
   background-color: #fff;
   color: #6070ff;
   display: flex;
@@ -53,6 +53,8 @@ header {
 }
 
 .logo {
+  font-size: 2rem;
+  font-weight: bold;
   animation-name: logo-animation;
   animation-duration: 0.5s;
 }
@@ -77,7 +79,6 @@ header {
 .mobile-menu--show {
   display: flex;
   flex-direction: column;
-  position: absolute;
   top: 0;
   left: 0;
   padding: 1em 0.75em;
@@ -90,6 +91,8 @@ header {
   font-size: 2rem;
   line-height: 44px;
   backdrop-filter: blur(4px);
+  position: fixed;
+  z-index: 15;
 }
 
 .mobile-menu--show > ul > li {
@@ -153,7 +156,6 @@ header {
 }
 
 .social-icons {
-  justify-content: space-between;
   align-items: center;
   color: #505f79;
   list-style: none;
@@ -395,6 +397,106 @@ textarea:focus {
 
 /* Contact me ends here */
 
+/* Detail Section Starts Here */
+
+.detail-card {
+  display: none;
+}
+
+.detail-card--show {
+  display: block;
+  z-index: 15;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  margin: auto 0;
+}
+
+.detail-card-inner {
+  display: flex;
+  flex-direction: column;
+  color: #172b4d;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 1em;
+  justify-content: center;
+  margin: 10%;
+  padding: 1em;
+}
+
+.detail-card-header {
+  justify-content: space-between;
+}
+
+.detail-card-heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 52px;
+  padding: 0;
+}
+
+.detail-card-cross-icon {
+  padding: 0;
+}
+
+.detail-card-display-img-container {
+  width: 100%;
+  height: auto;
+  margin: 2em 0;
+}
+
+.detail-card-display-img-container > img {
+  width: 100%;
+}
+
+.detail-card-body {
+  margin: 2em 0;
+}
+
+.detail-card-body-tags {
+  flex-wrap: wrap;
+  margin: 0.25em 0;
+  list-style-type: none;
+}
+
+.detail-card-body-tag {
+  color: #6070ff;
+  background-color: #ebebff;
+  margin: 0 0.5rem 0.5em 0;
+  padding: 0.25em 0.75em;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.detail-card-body-right-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.detail-card-button {
+  font-size: 15px;
+  padding: 0.5em 0.75em;
+  align-content: center;
+}
+
+.detail-card-button > i {
+  padding: 0;
+  font-size: 0.85em;
+  color: inherit;
+}
+
+/* Detail Section Endss Here */
+
 @media screen and (min-width: 768px) {
   /* Header Section Styling Starts Here */
 
@@ -411,6 +513,10 @@ textarea:focus {
   }
 
   .nav-menu-button {
+    display: none;
+  }
+
+  .mobile-menu--show {
     display: none;
   }
 
@@ -502,89 +608,25 @@ textarea:focus {
   }
 
   /* About Section Ends Here */
-}
 
-/* Detail Section Starts Here */
-.detail-card {
-  color: #172b4d;
-  background-color: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 1em;
-  flex-direction: column;
-  justify-content: center;
-  margin: 8em 7% 0 7%;
-  padding: 1em 1em 2em 1em;
-}
+  /* Details Card Starts Here */
 
-.detail-card-heading {
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 52px;
-  padding: 0;
-}
+  .detail-card {
+    flex-direction: column;
+  }
 
-.detail-card-cross-icon {
-  padding: 0;
-}
+  .detail-card-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2em;
+  }
 
-.detail-card-header {
-  justify-content: space-between;
-}
+  .detail-card-button {
+    min-width: 139px;
+  }
 
-.detail-card-display-img-container {
-  width: 100%;
-  height: auto;
-  margin: 2em 0;
+  /* Details Card Ends Here */
 }
-
-.detail-card-display-img-container > img {
-  width: 100%;
-}
-
-.detail-card-body {
-  margin: 2em 0;
-  display: grid;
-  grid-template-columns: 2fr 0.95fr;
-  gap: 2em;
-}
-
-.detail-card-body-tags {
-  flex-wrap: wrap;
-  margin: 0.25em 0;
-  list-style-type: none;
-}
-
-.detail-card-body-tag {
-  color: #6070ff;
-  background-color: #ebebff;
-  margin: 0 0.5rem 0.5em 0;
-  padding: 0.25em 0.75em;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-}
-
-.detail-card-body-right-button-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
-}
-
-.detail-card-button {
-  font-size: 15px;
-  padding: 0.5em 0.75em;
-  align-content: center;
-}
-
-.detail-card-button > i {
-  padding: 0;
-  font-size: 0.85em;
-  color: inherit;
-}
-
-/* Detail Section Endss Here */
 
 /* Animations and Transitions Start Here */
 @keyframes logo-animation {

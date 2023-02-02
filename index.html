@@ -10,10 +10,10 @@
     <title>Portfolio</title>
 </head>
 
-<body>
+<body id="body">
     <!-- Header Section Starts Here -->
     <header>
-        <h1 class="logo"><a href="#">Usman</a></h1>
+        <a class="logo" href="#">Usman</a>
         <nav>
             <svg id="show-nav-btn" class="nav-menu-button" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -68,110 +68,16 @@
     <!-- Works Section Starts Here -->
 
     <section id="my-portfolio" class="works">
-        <!-- Card 1 starts -->
-        <ul class="works-cards">
-            <li class="works-card">
-                <img src="./assets/works-1.png" alt="Recent Work">
-                <div class="works-card-main">
-                    <h3 class="works-card-heading-large">Tonic</h3>
-                    <div class="d-flex works-card-client">
-                        <p class="paragraph">CANOPY</p>
-                        <i class="fa-solid fa-circle works-card-client-counter"></i>
-                        <p class="works-card-client-role paragraph">Back End Dev</p>
-                        <i class="fa-solid fa-circle works-card-client-counter"></i>
-                        <p class="works-card-client-year paragraph">2015</p>
-                    </div>
-                    <p class="paragraph works-card-paragraph">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul class="d-flex works-card-tags">
-                        <li class="works-card-tag">html</li>
-                        <li class="works-card-tag">css</li>
-                        <li class="works-card-tag">javascript</li>
-                    </ul>
-                    <button>See Project</button>
-                </div>
-            </li>
-            <!-- Card 1 Ends -->
-            <!-- Card 2 starts -->
-            <li class="works-card">
-                <img src="./assets/works-2.png" alt="Recent Work">
-                <div class="works-card-main">
-                    <h3 class="works-card-heading-large">Multi-Post Stories</h3>
-                    <div class="d-flex works-card-client">
-                        <p class="paragraph">CANOPY</p>
-                        <i class="fa-solid fa-circle works-card-client-counter"></i>
-                        <p class="works-card-client-role paragraph">Back End Dev</p>
-                        <i class="fa-solid fa-circle works-card-client-counter"></i>
-                        <p class="works-card-client-year paragraph">2015</p>
-                    </div>
-                    <p class="paragraph works-card-paragraph">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul class="d-flex works-card-tags">
-                        <li class="works-card-tag">html</li>
-                        <li class="works-card-tag">css</li>
-                        <li class="works-card-tag">javascript</li>
-                    </ul>
-                    <button>See Project</button>
-                </div>
-            </li>
-            <!-- Card 2 Ends -->
-            <!-- Card 3 starts -->
-            <li class="works-card">
-                <img src="./assets/works-3.png" alt="Recent Work">
-                <div class="works-card-main">
-                    <h3 class="works-card-heading-large">Tonic</h3>
-                    <div class="d-flex works-card-client">
-                        <p class="paragraph">CANOPY</p>
-                        <i class="fa-solid fa-circle works-card-client-counter"></i>
-                        <p class="works-card-client-role paragraph">Back End Dev</p>
-                        <i class="fa-solid fa-circle works-card-client-counter"></i>
-                        <p class="works-card-client-year paragraph">2015</p>
-                    </div>
-                    <p class="paragraph works-card-paragraph">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul class="d-flex works-card-tags">
-                        <li class="works-card-tag">html</li>
-                        <li class="works-card-tag">css</li>
-                        <li class="works-card-tag">javascript</li>
-                    </ul>
-                    <button>See Project</button>
-                </div>
-            </li>
-            <!-- Card 3 Ends -->
-            <!-- Card 4 starts -->
-            <li class="works-card">
-                <img src="./assets/works-4.png" alt="Recent Work">
-                <div class="works-card-main">
-                    <h3 class="works-card-heading-large">Multi-Post Stories</h3>
-                    <div class="d-flex works-card-client">
-                        <p class="paragraph">CANOPY</p>
-                        <i class="fa-solid fa-circle works-card-client-counter"></i>
-                        <p class="works-card-client-role paragraph">Back End Dev</p>
-                        <i class="fa-solid fa-circle works-card-client-counter"></i>
-                        <p class="works-card-client-year paragraph">2015</p>
-                    </div>
-                    <p class="paragraph works-card-paragraph">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul class="d-flex works-card-tags">
-                        <li class="works-card-tag">html</li>
-                        <li class="works-card-tag">css</li>
-                        <li class="works-card-tag">javascript</li>
-                    </ul>
-                    <button>See Project</button>
-                </div>
-            </li>
-        </ul>
+        <ul id="works-cards" class="works-cards"></ul>
     </section>
+
     <!-- Works Section Ends Here -->
+    
     <!-- About Section Starts Here -->
     <section id="about" class="about">
         <div class="headline-skill-container">
             <div class="headline">
-                <h1 class="headline-heading heading-large">About <br> Myself</h1>
+                <h2 class="headline-heading heading-large">About <br> Myself</h2>
                 <p class="headline-paragraph paragraph">I’m a software developer! I can help you build a product ,
                     feature
                     or website
@@ -230,7 +136,7 @@
         </div>
         <!-- Contact Me Section Starts Here -->
         <div id="contact" class="contact-me-form-container">
-            <h1 class="contact-me-form-heading">Contact me</h1>
+            <h2 class="contact-me-form-heading">Contact me</h2>
             <p class="contact-me-form-paragraph">If you have an application you are interested in developing, a
                 feature that you need built
                 or a project that
