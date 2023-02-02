@@ -141,14 +141,14 @@
                 feature that you need built
                 or a project that
                 needs coding. I'd love to help with it</p>
-            <form action="https://formspree.io/f/mqkoaqjr" method="POST" class="contact-me-form">
-                <input class="contact-me-form-text-input" required maxlength="30" name="name" type="text"
+            <form id="contact-me-form" action="https://formspree.io/f/mqkoaqjr" method="POST" class="contact-me-form">
+                <input class="contact-me-form-text-input" maxlength="30" name="name" type="text"
                     placeholder="Your good name">
-                <input class="contact-me-form-text-input" required name="email" type="email"
-                    placeholder="Your email address">
-                <textarea class="contact-me-form-text-input" required maxlength="500" name="message" cols="30" rows="9"
+                <input class="contact-me-form-text-input" name="email" placeholder="Your email address">
+                <textarea class="contact-me-form-text-input" maxlength="500" name="message" cols="30" rows="9"
                     placeholder="Write your message here"></textarea>
                 <button class="contact-me-form-button" type="submit">Get In Touch</button>
+                <p id="contact-me-form-error-msg" class="contact-me-form-error-msg-hidden"></p>
             </form>
         </div>
         <!-- Contact Me Section Ends Here -->
