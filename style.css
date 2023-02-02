@@ -79,7 +79,6 @@ header {
 .mobile-menu--show {
   display: flex;
   flex-direction: column;
-  position: absolute;
   top: 0;
   left: 0;
   padding: 1em 0.75em;
@@ -92,6 +91,8 @@ header {
   font-size: 2rem;
   line-height: 44px;
   backdrop-filter: blur(4px);
+  position: fixed;
+  z-index: 15;
 }
 
 .mobile-menu--show > ul > li {
@@ -170,12 +171,7 @@ i {
 
 /* Works Section Styling Starts Here */
 
-.works-cards {
-  /* position: relative; */
-}
-
 .works-card {
-  position: relative;
   color: #172b4d;
   background-color: #fff;
   border: 1px solid #dfe1e6;
@@ -408,22 +404,29 @@ textarea:focus {
 }
 
 .detail-card--show {
-  display: flex;
-  position: absolute;
-  z-index: 5;
+  display: block;
+  z-index: 15;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
   top: 0;
-  left: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  margin: auto 0;
 }
 
 .detail-card-inner {
+  display: flex;
   flex-direction: column;
   color: #172b4d;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 1em;
   justify-content: center;
-  margin: 0.5em 2%;
+  margin: 10%;
   padding: 1em;
 }
 
@@ -510,6 +513,10 @@ textarea:focus {
   }
 
   .nav-menu-button {
+    display: none;
+  }
+
+  .mobile-menu--show {
     display: none;
   }
 
@@ -606,8 +613,6 @@ textarea:focus {
 
   .detail-card {
     flex-direction: column;
-    margin: 8em 7%;
-    padding: 1em 1em 2em 1em;
   }
 
   .detail-card-body {

@@ -78,8 +78,8 @@ projects.forEach((project, index) => {
 });
 
 // Modal Popup Starts Here
+const body = document.getElementById('body');
 projects.forEach((project, index) => {
-  const list = document.getElementById(`works-card-${index + 1}`);
   const languages = project.projectLang.map((lang) => `<li class='detail-card-body-tag'>${lang}</li>`).join('');
   const modal = document.createElement('div');
   modal.classList.add('detail-card');
@@ -115,7 +115,7 @@ projects.forEach((project, index) => {
         </div>
     </div>
   </div>`;
-  list.appendChild(modal);
+  body.appendChild(modal);
 });
 // Modal Popup Ends Here
 
