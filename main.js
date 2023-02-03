@@ -200,17 +200,24 @@ contactForm.addEventListener('submit', (event) => {
 
 // LocalStorage Starts Here
 
-const contactFormData = JSON.parse(window.localStorage.getItem('contactFormData'));
+let contactFormData = JSON.parse(window.localStorage.getItem('contactFormData'));
+if (!contactFormData) {
+  contactFormData = {
+    name: '',
+    email: '',
+    message: '',
+  };
+}
 // This function populates data intp inputs that we got from localStorage
 const keys = Object.keys(contactFormData);
 for (let i = 0; i < keys.length; i += 1) {
   contactForm.elements[keys[i]].value = contactFormData[keys[i]];
 }
 // This function updates data in localStorage when user add data in contact form
-for(let i=0; i < contactForm.length; i++){
+for (let i = 0; i < contactForm.length; i += 1) {
   contactForm.elements[i].addEventListener('change', (e) => {
     contactFormData[`${contactForm.elements[i].name}`] = e.target.value;
-    window.localStorage.setItem("contactFormData", JSON.stringify(contactFormData));
+    window.localStorage.setItem('contactFormData', JSON.stringify(contactFormData));
   });
 }
 // LocalStorage Ends Here
