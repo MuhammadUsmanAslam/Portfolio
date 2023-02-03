@@ -197,3 +197,14 @@ contactForm.addEventListener('submit', (event) => {
 });
 
 // Contact Form Validation Ends Here
+
+// LocalStorage Starts Here
+
+const contactFormData = JSON.parse(window.localStorage.getItem('contactFormData'));
+// This function populates data intp inputs that we got from localStorage
+const keys = Object.keys(contactFormData);
+for (let i = 0; i < keys.length; i += 1) {
+  contactForm.elements[keys[i]].value = contactFormData[keys[i]];
+}
+
+// LocalStorage Ends Here
