@@ -26,7 +26,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-**Portfolio** is a simple html and css project that contains a simple HTML page and some CSS for that page
+**Portfolio** is a webpage which showcase my skills, qualifications, education, training, and experiences. It provides insight into my personality and work ethic. It is a static website featuring work samples and other details as explained above.
 
 ## 🛠 Built With <a name="built-with"></a>
 
