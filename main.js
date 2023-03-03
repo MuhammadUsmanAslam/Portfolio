@@ -20,36 +20,28 @@ mobileMenuLinks.addEventListener('click', () => {
 // Adding Dynamic Data to Works ul starts Here
 const projects = [{
   featureImg: './assets/works-1.png',
-  projectName: 'Tonic',
-  projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  projectName: 'To Do List',
+  projectDescription: 'ToDo List is a ToDo list application which stores our daily ToDo tasks. User and add and remove ToDo to the list and all the data will be stores in their local device in localStorage. User can also perform CRUD operations on ToDo list.',
   projectLang: ['HTML', 'CSS', 'JavaScript'],
-  projectDetails: { orgnization: 'CANOPY', type: 'Back END Dev', year: 2015 },
-  seeLive: 'https://muhammadusmanaslam.github.io/Portfolio/',
-  seeSource: 'https://github.com/MuhammadUsmanAslam/Portfolio',
+  projectDetails: { orgnization: 'Microverse', type: 'Front END Dev', year: 2023 },
+  seeLive: 'https://muhammadusmanaslam.github.io/To-Do-List/dist/',
+  seeSource: 'https://github.com/MuhammadUsmanAslam/To-Do-List',
 }, {
   featureImg: './assets/works-2.png',
-  projectName: 'Multi-Post Stories',
-  projectDescription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-  projectLang: ['HTML', 'CSS', 'Ruby', 'JavaScript'],
-  projectDetails: { orgnization: 'FACEBOOK', type: 'Full Stack Dev', year: 2016 },
-  seeLive: 'https://muhammadusmanaslam.github.io/Portfolio/',
-  seeSource: 'https://github.com/MuhammadUsmanAslam/Portfolio',
+  projectName: 'Awesome Books',
+  projectDescription: 'Awesome Books is a book list application which stores our favourite books. User and add and remove books to the list and all the data will be stores in their local device in localStorage.',
+  projectLang: ['HTML', 'CSS', 'JavaScript'],
+  projectDetails: { orgnization: 'Microverse', type: 'Front END Dev', year: 2023 },
+  seeLive: 'https://muhammadusmanaslam.github.io/Awesome-Books/',
+  seeSource: 'https://github.com/MuhammadUsmanAslam/Awesome-Books',
 }, {
   featureImg: './assets/works-3.png',
-  projectName: 'Facebook 360',
-  projectDescription: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-  projectLang: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
-  projectDetails: { orgnization: 'FACEBOOK', type: 'Full Stack Dev', year: 2017 },
-  seeLive: 'https://muhammadusmanaslam.github.io/Portfolio/',
-  seeSource: 'https://github.com/MuhammadUsmanAslam/Portfolio',
-}, {
-  featureImg: './assets/works-4.png',
-  projectName: 'Uber Navigation',
-  projectDescription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-  projectLang: ['HTML', 'Ruby', 'CSS', 'JavaScript'],
-  projectDetails: { orgnization: 'UBER', type: 'Front End Dev', year: 2017 },
-  seeLive: 'https://muhammadusmanaslam.github.io/Portfolio/',
-  seeSource: 'https://github.com/MuhammadUsmanAslam/Portfolio',
+  projectName: 'Covid Tracker',
+  projectDescription: 'Covid Tracker is a React application which displays covid patients data that updates daily. Data is formatted into country wise list. https://disease.sh API is used for data.',
+  projectLang: ['HTML', 'CSS', 'JavaScript', 'React'],
+  projectDetails: { orgnization: 'FACEBOOK', type: 'Front END', year: 2021 },
+  seeLive: 'https://covid-tracker-42f93.web.app/',
+  seeSource: 'https://github.com/MuhammadUsmanAslam/covid-tracker',
 }];
 
 projects.forEach((project, index) => {
@@ -108,9 +100,9 @@ projects.forEach((project, index) => {
                 ${languages}
             </ul>
             <div class='detail-card-body-right-button-container'>
-                <button class='detail-card-button' src='${project.seeLive}'>See Live <i
-                        class='fa-solid fa-arrow-up-right-from-square'></i></button>
-                <button class='detail-card-button'  src='${project.seeSource}'>See Source <i class='fa-brands fa-github'></i></button>
+                <a href='${project.seeLive}' target='blank'><button class='detail-card-button' src='${project.seeLive}'>See Live <i
+                        class='fa-solid fa-arrow-up-right-from-square'></i></button></a>
+                <a href='${project.seeSource}' target='blank'><button class='detail-card-button'  src='${project.seeSource}'>See Source <i class='fa-brands fa-github'></i></button></a>
             </div>
         </div>
     </div>
